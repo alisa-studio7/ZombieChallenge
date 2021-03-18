@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="IllnessCell" rowHeight="60" id="0of-zQ-T6r" customClass="IllnessCell" customModule="ZombieChallenge" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0of-zQ-T6r" id="Gqs-EM-kWk">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="86"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dw9-V6-rjM">
+                        <rect key="frame" x="16" y="0.0" width="352" height="86"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="2dM-2l-g8k">
+                        <rect key="frame" x="384" y="35" width="14" height="16.5"/>
+                        <color key="tintColor" red="0.61571032591540409" green="0.34854396338342336" blue="0.298613459976939" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="CbA-BF-ci7"/>
+                            <constraint firstAttribute="width" constant="14" id="TZj-Zq-2iZ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="2dM-2l-g8k" firstAttribute="centerY" secondItem="Gqs-EM-kWk" secondAttribute="centerY" id="Buf-rM-1bq"/>
+                    <constraint firstItem="dw9-V6-rjM" firstAttribute="top" secondItem="Gqs-EM-kWk" secondAttribute="top" id="Hya-Fn-F0Z"/>
+                    <constraint firstAttribute="trailing" secondItem="2dM-2l-g8k" secondAttribute="trailing" constant="16" id="Ixa-NF-uqA"/>
+                    <constraint firstItem="2dM-2l-g8k" firstAttribute="leading" secondItem="dw9-V6-rjM" secondAttribute="trailing" constant="16" id="PHZ-TA-GDL"/>
+                    <constraint firstItem="dw9-V6-rjM" firstAttribute="leading" secondItem="Gqs-EM-kWk" secondAttribute="leading" constant="16" id="YGZ-1D-Xhn"/>
+                    <constraint firstAttribute="bottom" secondItem="dw9-V6-rjM" secondAttribute="bottom" id="qPZ-4U-PtE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="illnessNameLabel" destination="dw9-V6-rjM" id="r5l-hf-dwx"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="18.75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
+    </resources>
+</document>

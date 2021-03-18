@@ -1,0 +1,1008 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18E8AA776B5202A959A4C9C5 /* Pods_ZombieChallenge_ZombieChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03ABA37D5432B3FC06FBD049 /* Pods_ZombieChallenge_ZombieChallengeUITests.framework */; };
+		4423814D9C9CD91AF92283BD /* Pods_ZombieChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D20881C6D70994037F01AC /* Pods_ZombieChallenge.framework */; };
+		AE39C6B7260066BA0042B98A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE39C6B6260066BA0042B98A /* AppDelegate.swift */; };
+		AE39C6C0260066BC0042B98A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE39C6BF260066BC0042B98A /* Assets.xcassets */; };
+		AE39C6C3260066BC0042B98A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE39C6C1260066BC0042B98A /* LaunchScreen.storyboard */; };
+		AE39C6D9260066BC0042B98A /* ZombieChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE39C6D8260066BC0042B98A /* ZombieChallengeUITests.swift */; };
+		AE39C6F6260067FC0042B98A /* IllnessesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE39C6F5260067FC0042B98A /* IllnessesViewController.swift */; };
+		AE39C6FE260068140042B98A /* IllnessesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE39C6FD260068140042B98A /* IllnessesInteractor.swift */; };
+		AE39C7032600681C0042B98A /* IllnessesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE39C7022600681C0042B98A /* IllnessesPresenter.swift */; };
+		AE39C708260068220042B98A /* IllnessesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE39C707260068220042B98A /* IllnessesRouter.swift */; };
+		AE39C70D260068280042B98A /* IllnessesWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE39C70C260068280042B98A /* IllnessesWorker.swift */; };
+		AE39C712260068330042B98A /* IllnessesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE39C711260068330042B98A /* IllnessesStore.swift */; };
+		AE39C72026006C7E0042B98A /* IllnessesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE39C71F26006C7E0042B98A /* IllnessesViewModel.swift */; };
+		AE39C72626006C8C0042B98A /* Illness.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE39C72526006C8C0042B98A /* Illness.swift */; };
+		AE39C72E26006CE40042B98A /* Commons.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE39C72D26006CE40042B98A /* Commons.swift */; };
+		AE39C73C260079A80042B98A /* Handling.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE39C73B260079A80042B98A /* Handling.swift */; };
+		AE39C74126007F4F0042B98A /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE39C74026007F4F0042B98A /* Request.swift */; };
+		AE39C746260082C20042B98A /* RequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE39C745260082C20042B98A /* RequestData.swift */; };
+		AE39C74B260082E00042B98A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE39C74A260082E00042B98A /* Constants.swift */; };
+		AE39C750260082F10042B98A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE39C74F260082F10042B98A /* HTTPMethod.swift */; };
+		AE42427726019D51007BBD45 /* SeverityLevel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE42427626019D51007BBD45 /* SeverityLevel.storyboard */; };
+		AE42427C26019D7C007BBD45 /* SeverityLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE42427B26019D7C007BBD45 /* SeverityLevelViewController.swift */; };
+		AE42428126019D97007BBD45 /* SeverityLevelRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE42428026019D97007BBD45 /* SeverityLevelRouter.swift */; };
+		AE4242862601B669007BBD45 /* SeverityLevelInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4242852601B669007BBD45 /* SeverityLevelInteractor.swift */; };
+		AE4242902601B9B3007BBD45 /* Hospitals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE42428F2601B9B3007BBD45 /* Hospitals.storyboard */; };
+		AE4242952601B9CB007BBD45 /* HospitalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4242942601B9CB007BBD45 /* HospitalsViewController.swift */; };
+		AE42429A2601BE5C007BBD45 /* HospitalsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4242992601BE5C007BBD45 /* HospitalsInteractor.swift */; };
+		AE42429F2601BE65007BBD45 /* HosptialsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE42429E2601BE65007BBD45 /* HosptialsPresenter.swift */; };
+		AE4242A42601BE75007BBD45 /* HospitalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4242A32601BE75007BBD45 /* HospitalsViewModel.swift */; };
+		AE4242A92601BE7D007BBD45 /* HospitalsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4242A82601BE7D007BBD45 /* HospitalsWorker.swift */; };
+		AE4242AE2601BE85007BBD45 /* HospitalsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4242AD2601BE85007BBD45 /* HospitalsStore.swift */; };
+		AE4242B62601C306007BBD45 /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4242B52601C306007BBD45 /* Hospital.swift */; };
+		AE4242C92601E6BF007BBD45 /* NavigationIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4242C82601E6BF007BBD45 /* NavigationIndicator.swift */; };
+		AE4242CF2601F4E4007BBD45 /* HospitalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4242CE2601F4E4007BBD45 /* HospitalCell.swift */; };
+		AE4242D72601F4F8007BBD45 /* HospitalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE4242D62601F4F8007BBD45 /* HospitalCell.xib */; };
+		AE4242E22602EC84007BBD45 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE4242E12602EC84007BBD45 /* GoogleService-Info.plist */; };
+		AE42430C2602F77F007BBD45 /* SeverityLevelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE42430B2602F77F007BBD45 /* SeverityLevelViewModel.swift */; };
+		AE4243112602F7C3007BBD45 /* SeverityLevelWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4243102602F7C3007BBD45 /* SeverityLevelWorker.swift */; };
+		AE4243192602F7DC007BBD45 /* SeverityLevelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4243182602F7DC007BBD45 /* SeverityLevelStore.swift */; };
+		AE4243212602FA5D007BBD45 /* SeverityLevelPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4243202602FA5D007BBD45 /* SeverityLevelPresenter.swift */; };
+		AE42435226031BF3007BBD45 /* IllnessesInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE42435126031BF3007BBD45 /* IllnessesInteractorTests.swift */; };
+		AE424369260322B4007BBD45 /* IllnessesPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE424368260322B4007BBD45 /* IllnessesPresenterTests.swift */; };
+		AE9C8EB82601855D0006BE8B /* Illnesses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9C8EB72601855D0006BE8B /* Illnesses.storyboard */; };
+		AE9C8EBE260187330006BE8B /* IllnessCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9C8EBD260187330006BE8B /* IllnessCell.swift */; };
+		AE9C8ECD260197CF0006BE8B /* IllnessCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE9C8ECC260197CF0006BE8B /* IllnessCell.xib */; };
+		AEB8FEA826032AED00266429 /* HospitalsInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB8FEA726032AED00266429 /* HospitalsInteractorTests.swift */; };
+		AEB8FEAD26032AFB00266429 /* HospitalsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB8FEAC26032AFB00266429 /* HospitalsPresenterTests.swift */; };
+		AEB8FEB226032E9100266429 /* SeverityLevelInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB8FEB126032E9100266429 /* SeverityLevelInteractorTests.swift */; };
+		AEB8FEB726032E9D00266429 /* SeverityLevelPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB8FEB626032E9D00266429 /* SeverityLevelPresenterTests.swift */; };
+		B07973598C1D656C4EDA5E10 /* Pods_ZombieChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D118E75AE2119994DFF6EB27 /* Pods_ZombieChallengeTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE39C6CA260066BC0042B98A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE39C6AB260066BA0042B98A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE39C6B2260066BA0042B98A;
+			remoteInfo = ZombieChallenge;
+		};
+		AE39C6D5260066BC0042B98A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE39C6AB260066BA0042B98A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE39C6B2260066BA0042B98A;
+			remoteInfo = ZombieChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03ABA37D5432B3FC06FBD049 /* Pods_ZombieChallenge_ZombieChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZombieChallenge_ZombieChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DCAF59C3E78FF12162D18AA /* Pods-ZombieChallenge-ZombieChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZombieChallenge-ZombieChallengeUITests.release.xcconfig"; path = "Target Support Files/Pods-ZombieChallenge-ZombieChallengeUITests/Pods-ZombieChallenge-ZombieChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		36D20881C6D70994037F01AC /* Pods_ZombieChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZombieChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FE806BEFC9AD1ECBA338787 /* Pods-ZombieChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZombieChallenge.debug.xcconfig"; path = "Target Support Files/Pods-ZombieChallenge/Pods-ZombieChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		7FA4AF9972E765A34F370ABD /* Pods-ZombieChallenge-ZombieChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZombieChallenge-ZombieChallengeUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZombieChallenge-ZombieChallengeUITests/Pods-ZombieChallenge-ZombieChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE39C6B3260066BA0042B98A /* ZombieChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZombieChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE39C6B6260066BA0042B98A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE39C6BF260066BC0042B98A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE39C6C2260066BC0042B98A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE39C6C4260066BC0042B98A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE39C6C9260066BC0042B98A /* ZombieChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZombieChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE39C6CF260066BC0042B98A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE39C6D4260066BC0042B98A /* ZombieChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZombieChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE39C6D8260066BC0042B98A /* ZombieChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZombieChallengeUITests.swift; sourceTree = "<group>"; };
+		AE39C6DA260066BC0042B98A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE39C6F5260067FC0042B98A /* IllnessesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllnessesViewController.swift; sourceTree = "<group>"; };
+		AE39C6FD260068140042B98A /* IllnessesInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllnessesInteractor.swift; sourceTree = "<group>"; };
+		AE39C7022600681C0042B98A /* IllnessesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllnessesPresenter.swift; sourceTree = "<group>"; };
+		AE39C707260068220042B98A /* IllnessesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllnessesRouter.swift; sourceTree = "<group>"; };
+		AE39C70C260068280042B98A /* IllnessesWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllnessesWorker.swift; sourceTree = "<group>"; };
+		AE39C711260068330042B98A /* IllnessesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllnessesStore.swift; sourceTree = "<group>"; };
+		AE39C71F26006C7E0042B98A /* IllnessesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllnessesViewModel.swift; sourceTree = "<group>"; };
+		AE39C72526006C8C0042B98A /* Illness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Illness.swift; sourceTree = "<group>"; };
+		AE39C72D26006CE40042B98A /* Commons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commons.swift; sourceTree = "<group>"; };
+		AE39C73B260079A80042B98A /* Handling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handling.swift; sourceTree = "<group>"; };
+		AE39C74026007F4F0042B98A /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		AE39C745260082C20042B98A /* RequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestData.swift; sourceTree = "<group>"; };
+		AE39C74A260082E00042B98A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AE39C74F260082F10042B98A /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		AE42427626019D51007BBD45 /* SeverityLevel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SeverityLevel.storyboard; sourceTree = "<group>"; };
+		AE42427B26019D7C007BBD45 /* SeverityLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeverityLevelViewController.swift; sourceTree = "<group>"; };
+		AE42428026019D97007BBD45 /* SeverityLevelRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeverityLevelRouter.swift; sourceTree = "<group>"; };
+		AE4242852601B669007BBD45 /* SeverityLevelInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeverityLevelInteractor.swift; sourceTree = "<group>"; };
+		AE42428F2601B9B3007BBD45 /* Hospitals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Hospitals.storyboard; sourceTree = "<group>"; };
+		AE4242942601B9CB007BBD45 /* HospitalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsViewController.swift; sourceTree = "<group>"; };
+		AE4242992601BE5C007BBD45 /* HospitalsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsInteractor.swift; sourceTree = "<group>"; };
+		AE42429E2601BE65007BBD45 /* HosptialsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HosptialsPresenter.swift; sourceTree = "<group>"; };
+		AE4242A32601BE75007BBD45 /* HospitalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsViewModel.swift; sourceTree = "<group>"; };
+		AE4242A82601BE7D007BBD45 /* HospitalsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsWorker.swift; sourceTree = "<group>"; };
+		AE4242AD2601BE85007BBD45 /* HospitalsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsStore.swift; sourceTree = "<group>"; };
+		AE4242B52601C306007BBD45 /* Hospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
+		AE4242C82601E6BF007BBD45 /* NavigationIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationIndicator.swift; sourceTree = "<group>"; };
+		AE4242CE2601F4E4007BBD45 /* HospitalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalCell.swift; sourceTree = "<group>"; };
+		AE4242D62601F4F8007BBD45 /* HospitalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HospitalCell.xib; sourceTree = "<group>"; };
+		AE4242E12602EC84007BBD45 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AE42430B2602F77F007BBD45 /* SeverityLevelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeverityLevelViewModel.swift; sourceTree = "<group>"; };
+		AE4243102602F7C3007BBD45 /* SeverityLevelWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeverityLevelWorker.swift; sourceTree = "<group>"; };
+		AE4243182602F7DC007BBD45 /* SeverityLevelStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeverityLevelStore.swift; sourceTree = "<group>"; };
+		AE4243202602FA5D007BBD45 /* SeverityLevelPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeverityLevelPresenter.swift; sourceTree = "<group>"; };
+		AE42435126031BF3007BBD45 /* IllnessesInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllnessesInteractorTests.swift; sourceTree = "<group>"; };
+		AE42435E26031F16007BBD45 /* ZombieChallengeTests-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZombieChallengeTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		AE424368260322B4007BBD45 /* IllnessesPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllnessesPresenterTests.swift; sourceTree = "<group>"; };
+		AE9C8EB72601855D0006BE8B /* Illnesses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Illnesses.storyboard; sourceTree = "<group>"; };
+		AE9C8EBD260187330006BE8B /* IllnessCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IllnessCell.swift; sourceTree = "<group>"; };
+		AE9C8ECC260197CF0006BE8B /* IllnessCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IllnessCell.xib; sourceTree = "<group>"; };
+		AEB8FEA726032AED00266429 /* HospitalsInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsInteractorTests.swift; sourceTree = "<group>"; };
+		AEB8FEAC26032AFB00266429 /* HospitalsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsPresenterTests.swift; sourceTree = "<group>"; };
+		AEB8FEB126032E9100266429 /* SeverityLevelInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeverityLevelInteractorTests.swift; sourceTree = "<group>"; };
+		AEB8FEB626032E9D00266429 /* SeverityLevelPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeverityLevelPresenterTests.swift; sourceTree = "<group>"; };
+		D118E75AE2119994DFF6EB27 /* Pods_ZombieChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZombieChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6D04792E05EB73596AEA2EB /* Pods-ZombieChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZombieChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-ZombieChallengeTests/Pods-ZombieChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		FAB025E04B7FF19CCF42030E /* Pods-ZombieChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZombieChallenge.release.xcconfig"; path = "Target Support Files/Pods-ZombieChallenge/Pods-ZombieChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		FE2F31D226DA4A92509599D4 /* Pods-ZombieChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZombieChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-ZombieChallengeTests/Pods-ZombieChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE39C6B0260066BA0042B98A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4423814D9C9CD91AF92283BD /* Pods_ZombieChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE39C6C6260066BC0042B98A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B07973598C1D656C4EDA5E10 /* Pods_ZombieChallengeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE39C6D1260066BC0042B98A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E8AA776B5202A959A4C9C5 /* Pods_ZombieChallenge_ZombieChallengeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DCDCFCA35145962CF04D795 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36D20881C6D70994037F01AC /* Pods_ZombieChallenge.framework */,
+				03ABA37D5432B3FC06FBD049 /* Pods_ZombieChallenge_ZombieChallengeUITests.framework */,
+				D118E75AE2119994DFF6EB27 /* Pods_ZombieChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		293E2A2F81A01BC5C7873D9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3FE806BEFC9AD1ECBA338787 /* Pods-ZombieChallenge.debug.xcconfig */,
+				FAB025E04B7FF19CCF42030E /* Pods-ZombieChallenge.release.xcconfig */,
+				7FA4AF9972E765A34F370ABD /* Pods-ZombieChallenge-ZombieChallengeUITests.debug.xcconfig */,
+				2DCAF59C3E78FF12162D18AA /* Pods-ZombieChallenge-ZombieChallengeUITests.release.xcconfig */,
+				FE2F31D226DA4A92509599D4 /* Pods-ZombieChallengeTests.debug.xcconfig */,
+				D6D04792E05EB73596AEA2EB /* Pods-ZombieChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AE39C6AA260066BA0042B98A = {
+			isa = PBXGroup;
+			children = (
+				AE39C6B5260066BA0042B98A /* ZombieChallenge */,
+				AE39C6CC260066BC0042B98A /* ZombieChallengeTests */,
+				AE39C6D7260066BC0042B98A /* ZombieChallengeUITests */,
+				AE39C6B4260066BA0042B98A /* Products */,
+				293E2A2F81A01BC5C7873D9A /* Pods */,
+				0DCDCFCA35145962CF04D795 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE39C6B4260066BA0042B98A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE39C6B3260066BA0042B98A /* ZombieChallenge.app */,
+				AE39C6C9260066BC0042B98A /* ZombieChallengeTests.xctest */,
+				AE39C6D4260066BC0042B98A /* ZombieChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE39C6B5260066BA0042B98A /* ZombieChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				AE8A03D0260338900088A474 /* Views */,
+				AE39C72426006C820042B98A /* Models */,
+				AE39C6EE260067420042B98A /* Helpers */,
+				AE39C6ED260067370042B98A /* Scenes */,
+				AE39C6EC2600672F0042B98A /* Networking */,
+				AE39C6B6260066BA0042B98A /* AppDelegate.swift */,
+				AE39C6BF260066BC0042B98A /* Assets.xcassets */,
+				AE39C6C1260066BC0042B98A /* LaunchScreen.storyboard */,
+				AE39C6C4260066BC0042B98A /* Info.plist */,
+				AE4242E12602EC84007BBD45 /* GoogleService-Info.plist */,
+			);
+			path = ZombieChallenge;
+			sourceTree = "<group>";
+		};
+		AE39C6CC260066BC0042B98A /* ZombieChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE39C6CF260066BC0042B98A /* Info.plist */,
+				AE42436726032299007BBD45 /* Hospitals */,
+				AE42436626032290007BBD45 /* SeverityLevel */,
+				AE42436526032284007BBD45 /* Illnesses */,
+				AE42435E26031F16007BBD45 /* ZombieChallengeTests-Bridging-Header.h */,
+			);
+			path = ZombieChallengeTests;
+			sourceTree = "<group>";
+		};
+		AE39C6D7260066BC0042B98A /* ZombieChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE39C6D8260066BC0042B98A /* ZombieChallengeUITests.swift */,
+				AE39C6DA260066BC0042B98A /* Info.plist */,
+			);
+			path = ZombieChallengeUITests;
+			sourceTree = "<group>";
+		};
+		AE39C6EC2600672F0042B98A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AE39C74026007F4F0042B98A /* Request.swift */,
+				AE39C745260082C20042B98A /* RequestData.swift */,
+				AE39C74F260082F10042B98A /* HTTPMethod.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AE39C6ED260067370042B98A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				AE39C6F2260067C00042B98A /* Illnesses */,
+				AE39C6F4260067E00042B98A /* SeverityLevel */,
+				AE39C6F3260067D40042B98A /* Hospitals */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		AE39C6EE260067420042B98A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AE39C72D26006CE40042B98A /* Commons.swift */,
+				AE39C73B260079A80042B98A /* Handling.swift */,
+				AE39C74A260082E00042B98A /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AE39C6F2260067C00042B98A /* Illnesses */ = {
+			isa = PBXGroup;
+			children = (
+				AE9C8ECB260197A80006BE8B /* IllnessCell */,
+				AE39C6F5260067FC0042B98A /* IllnessesViewController.swift */,
+				AE39C6FD260068140042B98A /* IllnessesInteractor.swift */,
+				AE39C7022600681C0042B98A /* IllnessesPresenter.swift */,
+				AE39C707260068220042B98A /* IllnessesRouter.swift */,
+				AE39C70C260068280042B98A /* IllnessesWorker.swift */,
+				AE39C711260068330042B98A /* IllnessesStore.swift */,
+				AE39C71F26006C7E0042B98A /* IllnessesViewModel.swift */,
+				AE9C8EB72601855D0006BE8B /* Illnesses.storyboard */,
+			);
+			path = Illnesses;
+			sourceTree = "<group>";
+		};
+		AE39C6F3260067D40042B98A /* Hospitals */ = {
+			isa = PBXGroup;
+			children = (
+				AE4242CD2601F4C7007BBD45 /* HospitalCell */,
+				AE4242942601B9CB007BBD45 /* HospitalsViewController.swift */,
+				AE4242992601BE5C007BBD45 /* HospitalsInteractor.swift */,
+				AE42429E2601BE65007BBD45 /* HosptialsPresenter.swift */,
+				AE4242A32601BE75007BBD45 /* HospitalsViewModel.swift */,
+				AE4242A82601BE7D007BBD45 /* HospitalsWorker.swift */,
+				AE4242AD2601BE85007BBD45 /* HospitalsStore.swift */,
+				AE42428F2601B9B3007BBD45 /* Hospitals.storyboard */,
+			);
+			path = Hospitals;
+			sourceTree = "<group>";
+		};
+		AE39C6F4260067E00042B98A /* SeverityLevel */ = {
+			isa = PBXGroup;
+			children = (
+				AE42427B26019D7C007BBD45 /* SeverityLevelViewController.swift */,
+				AE4242852601B669007BBD45 /* SeverityLevelInteractor.swift */,
+				AE4243202602FA5D007BBD45 /* SeverityLevelPresenter.swift */,
+				AE42428026019D97007BBD45 /* SeverityLevelRouter.swift */,
+				AE4243102602F7C3007BBD45 /* SeverityLevelWorker.swift */,
+				AE4243182602F7DC007BBD45 /* SeverityLevelStore.swift */,
+				AE42430B2602F77F007BBD45 /* SeverityLevelViewModel.swift */,
+				AE42427626019D51007BBD45 /* SeverityLevel.storyboard */,
+			);
+			path = SeverityLevel;
+			sourceTree = "<group>";
+		};
+		AE39C72426006C820042B98A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AE39C72526006C8C0042B98A /* Illness.swift */,
+				AE4242B52601C306007BBD45 /* Hospital.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AE4242CD2601F4C7007BBD45 /* HospitalCell */ = {
+			isa = PBXGroup;
+			children = (
+				AE4242CE2601F4E4007BBD45 /* HospitalCell.swift */,
+				AE4242D62601F4F8007BBD45 /* HospitalCell.xib */,
+			);
+			path = HospitalCell;
+			sourceTree = "<group>";
+		};
+		AE42436526032284007BBD45 /* Illnesses */ = {
+			isa = PBXGroup;
+			children = (
+				AE42435126031BF3007BBD45 /* IllnessesInteractorTests.swift */,
+				AE424368260322B4007BBD45 /* IllnessesPresenterTests.swift */,
+			);
+			path = Illnesses;
+			sourceTree = "<group>";
+		};
+		AE42436626032290007BBD45 /* SeverityLevel */ = {
+			isa = PBXGroup;
+			children = (
+				AEB8FEB126032E9100266429 /* SeverityLevelInteractorTests.swift */,
+				AEB8FEB626032E9D00266429 /* SeverityLevelPresenterTests.swift */,
+			);
+			path = SeverityLevel;
+			sourceTree = "<group>";
+		};
+		AE42436726032299007BBD45 /* Hospitals */ = {
+			isa = PBXGroup;
+			children = (
+				AEB8FEA726032AED00266429 /* HospitalsInteractorTests.swift */,
+				AEB8FEAC26032AFB00266429 /* HospitalsPresenterTests.swift */,
+			);
+			path = Hospitals;
+			sourceTree = "<group>";
+		};
+		AE8A03D0260338900088A474 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AE4242C82601E6BF007BBD45 /* NavigationIndicator.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AE9C8ECB260197A80006BE8B /* IllnessCell */ = {
+			isa = PBXGroup;
+			children = (
+				AE9C8EBD260187330006BE8B /* IllnessCell.swift */,
+				AE9C8ECC260197CF0006BE8B /* IllnessCell.xib */,
+			);
+			path = IllnessCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE39C6B2260066BA0042B98A /* ZombieChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE39C6DD260066BC0042B98A /* Build configuration list for PBXNativeTarget "ZombieChallenge" */;
+			buildPhases = (
+				5FD0BB3ABB4369DB7B5B222E /* [CP] Check Pods Manifest.lock */,
+				AE39C6AF260066BA0042B98A /* Sources */,
+				AE39C6B0260066BA0042B98A /* Frameworks */,
+				AE39C6B1260066BA0042B98A /* Resources */,
+				130932CD3FD6E5A2E7E11E04 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZombieChallenge;
+			productName = ZombieChallenge;
+			productReference = AE39C6B3260066BA0042B98A /* ZombieChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE39C6C8260066BC0042B98A /* ZombieChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE39C6E0260066BC0042B98A /* Build configuration list for PBXNativeTarget "ZombieChallengeTests" */;
+			buildPhases = (
+				D9C37873EB86392A6CCCAFD8 /* [CP] Check Pods Manifest.lock */,
+				AE39C6C5260066BC0042B98A /* Sources */,
+				AE39C6C6260066BC0042B98A /* Frameworks */,
+				AE39C6C7260066BC0042B98A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE39C6CB260066BC0042B98A /* PBXTargetDependency */,
+			);
+			name = ZombieChallengeTests;
+			productName = ZombieChallengeTests;
+			productReference = AE39C6C9260066BC0042B98A /* ZombieChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE39C6D3260066BC0042B98A /* ZombieChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE39C6E3260066BC0042B98A /* Build configuration list for PBXNativeTarget "ZombieChallengeUITests" */;
+			buildPhases = (
+				FCCB910176852D1956BB78BD /* [CP] Check Pods Manifest.lock */,
+				AE39C6D0260066BC0042B98A /* Sources */,
+				AE39C6D1260066BC0042B98A /* Frameworks */,
+				AE39C6D2260066BC0042B98A /* Resources */,
+				A4DAC12729E94C514913342B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE39C6D6260066BC0042B98A /* PBXTargetDependency */,
+			);
+			name = ZombieChallengeUITests;
+			productName = ZombieChallengeUITests;
+			productReference = AE39C6D4260066BC0042B98A /* ZombieChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE39C6AB260066BA0042B98A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					AE39C6B2260066BA0042B98A = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					AE39C6C8260066BC0042B98A = {
+						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1230;
+						TestTargetID = AE39C6B2260066BA0042B98A;
+					};
+					AE39C6D3260066BC0042B98A = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = AE39C6B2260066BA0042B98A;
+					};
+				};
+			};
+			buildConfigurationList = AE39C6AE260066BA0042B98A /* Build configuration list for PBXProject "ZombieChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE39C6AA260066BA0042B98A;
+			productRefGroup = AE39C6B4260066BA0042B98A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE39C6B2260066BA0042B98A /* ZombieChallenge */,
+				AE39C6C8260066BC0042B98A /* ZombieChallengeTests */,
+				AE39C6D3260066BC0042B98A /* ZombieChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE39C6B1260066BA0042B98A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4242D72601F4F8007BBD45 /* HospitalCell.xib in Resources */,
+				AE4242E22602EC84007BBD45 /* GoogleService-Info.plist in Resources */,
+				AE4242902601B9B3007BBD45 /* Hospitals.storyboard in Resources */,
+				AE42427726019D51007BBD45 /* SeverityLevel.storyboard in Resources */,
+				AE39C6C3260066BC0042B98A /* LaunchScreen.storyboard in Resources */,
+				AE9C8EB82601855D0006BE8B /* Illnesses.storyboard in Resources */,
+				AE9C8ECD260197CF0006BE8B /* IllnessCell.xib in Resources */,
+				AE39C6C0260066BC0042B98A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE39C6C7260066BC0042B98A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE39C6D2260066BC0042B98A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		130932CD3FD6E5A2E7E11E04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZombieChallenge/Pods-ZombieChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZombieChallenge/Pods-ZombieChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZombieChallenge/Pods-ZombieChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FD0BB3ABB4369DB7B5B222E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZombieChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4DAC12729E94C514913342B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZombieChallenge-ZombieChallengeUITests/Pods-ZombieChallenge-ZombieChallengeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZombieChallenge-ZombieChallengeUITests/Pods-ZombieChallenge-ZombieChallengeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZombieChallenge-ZombieChallengeUITests/Pods-ZombieChallenge-ZombieChallengeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9C37873EB86392A6CCCAFD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZombieChallengeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCCB910176852D1956BB78BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZombieChallenge-ZombieChallengeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE39C6AF260066BA0042B98A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE4242C92601E6BF007BBD45 /* NavigationIndicator.swift in Sources */,
+				AE39C6F6260067FC0042B98A /* IllnessesViewController.swift in Sources */,
+				AE4243212602FA5D007BBD45 /* SeverityLevelPresenter.swift in Sources */,
+				AE39C6B7260066BA0042B98A /* AppDelegate.swift in Sources */,
+				AE4242862601B669007BBD45 /* SeverityLevelInteractor.swift in Sources */,
+				AE39C72E26006CE40042B98A /* Commons.swift in Sources */,
+				AE39C708260068220042B98A /* IllnessesRouter.swift in Sources */,
+				AE4242952601B9CB007BBD45 /* HospitalsViewController.swift in Sources */,
+				AE39C712260068330042B98A /* IllnessesStore.swift in Sources */,
+				AE42429F2601BE65007BBD45 /* HosptialsPresenter.swift in Sources */,
+				AE42430C2602F77F007BBD45 /* SeverityLevelViewModel.swift in Sources */,
+				AE4242A92601BE7D007BBD45 /* HospitalsWorker.swift in Sources */,
+				AE42427C26019D7C007BBD45 /* SeverityLevelViewController.swift in Sources */,
+				AE39C70D260068280042B98A /* IllnessesWorker.swift in Sources */,
+				AE39C6FE260068140042B98A /* IllnessesInteractor.swift in Sources */,
+				AE4242AE2601BE85007BBD45 /* HospitalsStore.swift in Sources */,
+				AE9C8EBE260187330006BE8B /* IllnessCell.swift in Sources */,
+				AE4242CF2601F4E4007BBD45 /* HospitalCell.swift in Sources */,
+				AE39C746260082C20042B98A /* RequestData.swift in Sources */,
+				AE39C750260082F10042B98A /* HTTPMethod.swift in Sources */,
+				AE42429A2601BE5C007BBD45 /* HospitalsInteractor.swift in Sources */,
+				AE4242A42601BE75007BBD45 /* HospitalsViewModel.swift in Sources */,
+				AE39C7032600681C0042B98A /* IllnessesPresenter.swift in Sources */,
+				AE39C72026006C7E0042B98A /* IllnessesViewModel.swift in Sources */,
+				AE42428126019D97007BBD45 /* SeverityLevelRouter.swift in Sources */,
+				AE39C73C260079A80042B98A /* Handling.swift in Sources */,
+				AE4243112602F7C3007BBD45 /* SeverityLevelWorker.swift in Sources */,
+				AE4242B62601C306007BBD45 /* Hospital.swift in Sources */,
+				AE39C74B260082E00042B98A /* Constants.swift in Sources */,
+				AE39C74126007F4F0042B98A /* Request.swift in Sources */,
+				AE39C72626006C8C0042B98A /* Illness.swift in Sources */,
+				AE4243192602F7DC007BBD45 /* SeverityLevelStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE39C6C5260066BC0042B98A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEB8FEB226032E9100266429 /* SeverityLevelInteractorTests.swift in Sources */,
+				AE42435226031BF3007BBD45 /* IllnessesInteractorTests.swift in Sources */,
+				AEB8FEB726032E9D00266429 /* SeverityLevelPresenterTests.swift in Sources */,
+				AEB8FEA826032AED00266429 /* HospitalsInteractorTests.swift in Sources */,
+				AEB8FEAD26032AFB00266429 /* HospitalsPresenterTests.swift in Sources */,
+				AE424369260322B4007BBD45 /* IllnessesPresenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE39C6D0260066BC0042B98A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE39C6D9260066BC0042B98A /* ZombieChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE39C6CB260066BC0042B98A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE39C6B2260066BA0042B98A /* ZombieChallenge */;
+			targetProxy = AE39C6CA260066BC0042B98A /* PBXContainerItemProxy */;
+		};
+		AE39C6D6260066BC0042B98A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE39C6B2260066BA0042B98A /* ZombieChallenge */;
+			targetProxy = AE39C6D5260066BC0042B98A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE39C6C1260066BC0042B98A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE39C6C2260066BC0042B98A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE39C6DB260066BC0042B98A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE39C6DC260066BC0042B98A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE39C6DE260066BC0042B98A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FE806BEFC9AD1ECBA338787 /* Pods-ZombieChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZombieChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.ios.ZombieChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AE39C6DF260066BC0042B98A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAB025E04B7FF19CCF42030E /* Pods-ZombieChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZombieChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.ios.ZombieChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AE39C6E1260066BC0042B98A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE2F31D226DA4A92509599D4 /* Pods-ZombieChallengeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZombieChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.ios.ZombieChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZombieChallengeTests/ZombieChallengeTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZombieChallenge.app/ZombieChallenge";
+			};
+			name = Debug;
+		};
+		AE39C6E2260066BC0042B98A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6D04792E05EB73596AEA2EB /* Pods-ZombieChallengeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZombieChallengeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.ios.ZombieChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ZombieChallengeTests/ZombieChallengeTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZombieChallenge.app/ZombieChallenge";
+			};
+			name = Release;
+		};
+		AE39C6E4260066BC0042B98A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FA4AF9972E765A34F370ABD /* Pods-ZombieChallenge-ZombieChallengeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZombieChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.ios.ZombieChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZombieChallenge;
+			};
+			name = Debug;
+		};
+		AE39C6E5260066BC0042B98A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DCAF59C3E78FF12162D18AA /* Pods-ZombieChallenge-ZombieChallengeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZombieChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.ios.ZombieChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZombieChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE39C6AE260066BA0042B98A /* Build configuration list for PBXProject "ZombieChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE39C6DB260066BC0042B98A /* Debug */,
+				AE39C6DC260066BC0042B98A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE39C6DD260066BC0042B98A /* Build configuration list for PBXNativeTarget "ZombieChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE39C6DE260066BC0042B98A /* Debug */,
+				AE39C6DF260066BC0042B98A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE39C6E0260066BC0042B98A /* Build configuration list for PBXNativeTarget "ZombieChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE39C6E1260066BC0042B98A /* Debug */,
+				AE39C6E2260066BC0042B98A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE39C6E3260066BC0042B98A /* Build configuration list for PBXNativeTarget "ZombieChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE39C6E4260066BC0042B98A /* Debug */,
+				AE39C6E5260066BC0042B98A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE39C6AB260066BA0042B98A /* Project object */;
+}

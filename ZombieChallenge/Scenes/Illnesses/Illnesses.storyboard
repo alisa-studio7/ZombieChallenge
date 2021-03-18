@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RGp-Td-neO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="fPR-Yf-cS6">
+            <objects>
+                <navigationController id="RGp-Td-neO" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a3a-s8-d7b">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="fY2-Ws-rEt" kind="relationship" relationship="rootViewController" id="WTR-LB-VbR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jcZ-Tf-cGQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1322" y="35"/>
+        </scene>
+        <!--Illnesses View Controller-->
+        <scene sceneID="YXn-HK-iLj">
+            <objects>
+                <viewController id="fY2-Ws-rEt" customClass="IllnessesViewController" customModule="ZombieChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XNx-2V-m7c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select an illness:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZQ-fI-3Mp">
+                                <rect key="frame" x="24" y="112" width="366" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TuS-Cn-LbN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZSP-9m-uqb">
+                                <rect key="frame" x="24" y="166" width="366" height="696"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="fY2-Ws-rEt" id="1G0-mL-Rdk"/>
+                                    <outlet property="delegate" destination="fY2-Ws-rEt" id="koV-rY-wkY"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kRo-YG-240"/>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.97647058823529409" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="kRo-YG-240" firstAttribute="trailing" secondItem="EZQ-fI-3Mp" secondAttribute="trailing" constant="24" id="7df-Wx-dt5"/>
+                            <constraint firstItem="kRo-YG-240" firstAttribute="trailing" secondItem="ZSP-9m-uqb" secondAttribute="trailing" constant="24" id="QAj-dF-GpA"/>
+                            <constraint firstItem="EZQ-fI-3Mp" firstAttribute="leading" secondItem="kRo-YG-240" secondAttribute="leading" constant="24" id="YSg-Rf-67x"/>
+                            <constraint firstItem="ZSP-9m-uqb" firstAttribute="top" secondItem="EZQ-fI-3Mp" secondAttribute="bottom" constant="24" id="Ys4-SV-8Dv"/>
+                            <constraint firstItem="kRo-YG-240" firstAttribute="bottom" secondItem="ZSP-9m-uqb" secondAttribute="bottom" id="Zmv-eC-yMR"/>
+                            <constraint firstItem="ZSP-9m-uqb" firstAttribute="leading" secondItem="kRo-YG-240" secondAttribute="leading" constant="24" id="bPv-Vo-1px"/>
+                            <constraint firstItem="EZQ-fI-3Mp" firstAttribute="top" secondItem="kRo-YG-240" secondAttribute="top" constant="24" id="pUN-vW-bH0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z2Y-fx-9cV">
+                        <barButtonItem key="backBarButtonItem" title=" " id="iQy-Um-wVs"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="illnessesTableView" destination="ZSP-9m-uqb" id="mIx-Qe-zFU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f7g-Zl-VjB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-420" y="-8"/>
+        </scene>
+    </scenes>
+</document>

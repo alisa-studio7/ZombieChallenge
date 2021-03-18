@@ -1,0 +1,6 @@
+framework module Pods_ZombieChallenge {
+  umbrella header "Pods-ZombieChallenge-umbrella.h"
+
+  export *
+  module * { export * }
+}
