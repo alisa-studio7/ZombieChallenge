@@ -19,7 +19,7 @@ enum APIError: Error {
     case forbiddenRequest
     case internalServerError
     case serviceUnavailabel
-    case firebaseError(message: String)
+    case error(message: String)
     case genericError
     
     var localizedDescription: String {
@@ -36,7 +36,7 @@ enum APIError: Error {
             return "Internal Server Error"
         case .serviceUnavailabel:
             return "Service Unavailable"
-        case .firebaseError(let message):
+        case .error(let message):
             return message
         case .genericError:
             return "Something went wrong"

@@ -21,7 +21,7 @@ final class SeverityLevelStore: SeverityLevelStoreProtocol {
             FirestoreDB.PATIENT_SEVERITY_LEVEL.rawValue: request.levelOfPain
         ]) { (error) in
             if let err = error {
-                completion(.failure(error: .firebaseError(message: err.localizedDescription)))
+                completion(.failure(error: .error(message: err.localizedDescription)))
             } else {
                 completion(.success(result: true))
             }
