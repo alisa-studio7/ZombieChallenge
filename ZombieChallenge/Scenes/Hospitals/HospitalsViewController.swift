@@ -14,6 +14,9 @@ protocol HospitalsViewControllerProtocol: class {
 class HospitalsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var dataNotFoundLabel: UILabel!
+    @IBOutlet weak var retryButton: UIButton!
+    
     var interactor: HospitalsInteractor?
     var hospitals: [Hospital] = [] {
         didSet {
@@ -36,14 +39,34 @@ class HospitalsViewController: UIViewController {
         interactor?.getHospitals(request: HospitalsViewModel.GetHospitals.Request(levelOfPain: unwrapped(interactor?.severity?.level, with: 0)))
     }
     
-    func setupAppearance() {
+    private func setupAppearance() {
         let backButton = UIBarButtonItem()
         backButton.title = ""
         self.navigationController?.navigationBar.topItem?.backBarButtonItem = backButton
         
+        retryButton.layer.cornerRadius = retryButton.frame.size.height/2
+        retryButton.layer.borderWidth = 1.0
+        retryButton.layer.borderColor = UIColor.darkGray.cgColor
+        validateRetryState(isHidden: true)
+        
         tableView.register(
             UINib(nibName: CellIdentifier.hospitalCell.rawValue, bundle: nil),
             forCellReuseIdentifier: CellIdentifier.hospitalCell.rawValue)
+    }
+    
+    @IBAction func retryTapped(_ sender: Any) {
+        interactor?.getHospitals(request: HospitalsViewModel.GetHospitals.Request(levelOfPain: unwrapped(interactor?.severity?.level, with: 0)))
+    }
+    
+    private func validateRetryState(isHidden: Bool) {
+        DispatchQueue.main.async { [weak self] in
+            self?.dataNotFoundLabel.isHidden = isHidden
+            self?.retryButton.isHidden = isHidden
+            
+            if isHidden == false {
+                NativeIndicator.shared.hide()
+            }
+        }
     }
 }
 
@@ -53,7 +76,7 @@ extension HospitalsViewController: HospitalsViewControllerProtocol {
         case .success(let data):
             hospitals = data
         case .failure:
-            hospitals = []
+            validateRetryState(isHidden: false)
         }
     }
 }

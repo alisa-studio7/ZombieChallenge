@@ -32,6 +32,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Illnesses Not Found" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paR-CI-e9x">
+                                <rect key="frame" x="0.0" y="292" width="414" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="D11-q7-Kyt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select an illness:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZQ-fI-3Mp">
                                 <rect key="frame" x="24" y="112" width="366" height="30"/>
                                 <constraints>
@@ -41,6 +50,20 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DT7-Rx-tm3">
+                                <rect key="frame" x="157" y="358" width="100" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KHE-2S-I31"/>
+                                    <constraint firstAttribute="width" constant="100" id="YpM-mC-f35"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Retry">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="retryTapped:" destination="fY2-Ws-rEt" eventType="touchUpInside" id="K0N-R1-dJn"/>
+                                </connections>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZSP-9m-uqb">
                                 <rect key="frame" x="24" y="166" width="366" height="696"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -54,13 +77,18 @@
                         <viewLayoutGuide key="safeArea" id="kRo-YG-240"/>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.97647058823529409" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="paR-CI-e9x" firstAttribute="top" secondItem="EZQ-fI-3Mp" secondAttribute="bottom" constant="150" id="6Q7-c5-pIp"/>
                             <constraint firstItem="kRo-YG-240" firstAttribute="trailing" secondItem="EZQ-fI-3Mp" secondAttribute="trailing" constant="24" id="7df-Wx-dt5"/>
+                            <constraint firstItem="paR-CI-e9x" firstAttribute="leading" secondItem="kRo-YG-240" secondAttribute="leading" id="Pml-Eu-mW7"/>
                             <constraint firstItem="kRo-YG-240" firstAttribute="trailing" secondItem="ZSP-9m-uqb" secondAttribute="trailing" constant="24" id="QAj-dF-GpA"/>
                             <constraint firstItem="EZQ-fI-3Mp" firstAttribute="leading" secondItem="kRo-YG-240" secondAttribute="leading" constant="24" id="YSg-Rf-67x"/>
                             <constraint firstItem="ZSP-9m-uqb" firstAttribute="top" secondItem="EZQ-fI-3Mp" secondAttribute="bottom" constant="24" id="Ys4-SV-8Dv"/>
                             <constraint firstItem="kRo-YG-240" firstAttribute="bottom" secondItem="ZSP-9m-uqb" secondAttribute="bottom" id="Zmv-eC-yMR"/>
                             <constraint firstItem="ZSP-9m-uqb" firstAttribute="leading" secondItem="kRo-YG-240" secondAttribute="leading" constant="24" id="bPv-Vo-1px"/>
+                            <constraint firstItem="DT7-Rx-tm3" firstAttribute="top" secondItem="paR-CI-e9x" secondAttribute="bottom" constant="26" id="pND-By-yIP"/>
                             <constraint firstItem="EZQ-fI-3Mp" firstAttribute="top" secondItem="kRo-YG-240" secondAttribute="top" constant="24" id="pUN-vW-bH0"/>
+                            <constraint firstItem="kRo-YG-240" firstAttribute="trailing" secondItem="paR-CI-e9x" secondAttribute="trailing" id="tEa-VA-S1c"/>
+                            <constraint firstItem="DT7-Rx-tm3" firstAttribute="centerX" secondItem="XNx-2V-m7c" secondAttribute="centerX" id="wfr-er-yNn"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Z2Y-fx-9cV">
@@ -68,6 +96,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="illnessesTableView" destination="ZSP-9m-uqb" id="mIx-Qe-zFU"/>
+                        <outlet property="notFoundLabel" destination="paR-CI-e9x" id="l8e-WL-sq2"/>
+                        <outlet property="retryButton" destination="DT7-Rx-tm3" id="3Rh-lk-zQN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f7g-Zl-VjB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

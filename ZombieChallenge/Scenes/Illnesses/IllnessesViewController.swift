@@ -14,6 +14,8 @@ protocol IllnessesViewControllerProtocol: class {
 class IllnessesViewController: UIViewController {
     
     @IBOutlet weak var illnessesTableView: UITableView!
+    @IBOutlet weak var notFoundLabel: UILabel!
+    @IBOutlet weak var retryButton: UIButton!
     var interactor: IllnessesInteractor?
     var router: IllnessesRouter?
     var illnessList: [IllnessItem] = [] {
@@ -29,6 +31,7 @@ class IllnessesViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configure(viewController: self)
@@ -38,9 +41,29 @@ class IllnessesViewController: UIViewController {
     }
     
     private func setupAppearance() {
+        retryButton.layer.cornerRadius = retryButton.frame.size.height/2
+        retryButton.layer.borderWidth = 1.0
+        retryButton.layer.borderColor = UIColor.darkGray.cgColor
+        validateRetryState(isHidden: true)
+        
         illnessesTableView.register(
             UINib(nibName: CellIdentifier.illnessCell.rawValue, bundle: nil),
             forCellReuseIdentifier: CellIdentifier.illnessCell.rawValue)
+    }
+    
+    @IBAction func retryTapped(_ sender: Any) {
+        interactor?.getIllnesses(request: IllnessesViewModel.GetIllnesses.Request())
+    }
+    
+    private func validateRetryState(isHidden: Bool) {
+        DispatchQueue.main.async { [weak self] in
+            self?.notFoundLabel.isHidden = isHidden
+            self?.retryButton.isHidden = isHidden
+            
+            if isHidden == false {
+                NativeIndicator.shared.hide()
+            }
+        }
     }
 }
 
@@ -50,7 +73,7 @@ extension IllnessesViewController: IllnessesViewControllerProtocol {
         case .success(let data):
             illnessList = data
         case .failure:
-            illnessList = []
+            validateRetryState(isHidden: false)
         }
     }
 }
